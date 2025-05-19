@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-top: 200px;
+}
+
+.container {
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    color: #444;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.success {
+    text-align: center;
+    color: green;
+    margin-top: 20px;
+    display: none;
+}
+
+html {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+header {
+    background-color: #8686869a;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+header img {
+    width: 50px;
+    padding-top: 5px;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+}
+
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-size: 23px;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    gap: 15px; 
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #333;
+        width: 200px;
+        flex-direction: column;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu a {
+        text-align: left;
+        padding: 15px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}
+#intro {
+    min-height: 100vh;
+    background: linear-gradient(#08080848, #00000023), url('../images/poza1.jpg');
+    background-size: cover;
+    background-position: 0% 20%;
+}
+
+.logo {
+    height: 78px;
+    padding-right: 10px;
+    
+}

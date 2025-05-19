@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Înscriere Elev</title>
+    <link rel="stylesheet" href="css/inregistrare.css">
+
+    <script src="js/inregistrare.js" defer></script>
+
+</head>
+<body>
+
+    <header data-aos="fade-down">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/Logo (2).png" alt="Logo" />
+            </div>
+            <div class="navbar">
+                <span class="menu-icon" onclick="toggleMenu()">☰</span>
+                <div class="menu" id="menu">
+                    <a href="index.html">Acasă</a>
+                    <a href="index.html">Despre</a>
+                    <a href="index.html">Galerie</a>
+                    <a href="index.html">Noutăți</a>
+                    <a href="index.html">Contacte</a>
+                    <a href="inregistrare.html">Înregistrarea elevului</a>
+                </div>
+            </div>
+        </nav>
+
+    </header> 
+    <main>
+        <div class="container">
+            <h2>Înscriere Elev la Școală</h2>
+            <form action="https://formspree.io/f/xjkwzkeg" method="post">
+                <label for="clasa">Genul:</label>
+                <select id="clasa" name="genul elevului/elevei" required>
+                    <option value="">Selectează genul</option>
+                    <option value="Băiat">Băiat</option>
+                    <option value="Fată">Fată</option>
+                </select>
+
+                <label for="data">Data și anul nașterii elevului/ei:</label>
+                <input type="date" id="data" name="data și anul nașterii elevului/elevei" required>
+
+                <label for="nume">Nume Elev:</label>
+                <input type="text" id="nume" name="numele elevului" required>
+        
+                <label for="clasa">Clasa:</label>
+                <select id="clasa" name="clasa în care elevul dorește:" required>
+                    <option value="">Selectează clasa</option>
+                    <option value="1">Clasa a I-a</option>
+                    <option value="2">Clasa a II-a</option>
+                    <option value="3">Clasa a III-a</option>
+                    <option value="4">Clasa a IV-a</option>
+                    <option value="5">Clasa a V-a</option>
+                    <option value="6">Clasa a VI-a</option>
+                    <option value="7">Clasa a VII-a</option>
+                    <option value="8">Clasa a VIII-a</option>
+                    <option value="9">Clasa a IX-a</option>
+                </select>
+        
+                <label for="telefon">Număr de Telefon:</label>
+                <input type="tel" id="telefon" name="telefon" required>
+        
+                <label for="data">Data Întâlnirii cu Directoarea:</label>
+                <input type="date" id="data" name="data Întâlnirii cu directorul" required>
+        
+                <button type="submit">Trimite</button>
+            </form>
+        
+            <div class="success" id="successMsg">Formular trimis cu succes! Ve-ți primi un mesaj sau apel de la școală în privința formularului</div>
+        </div>
+    </main>
+
+</body>
+</html>
